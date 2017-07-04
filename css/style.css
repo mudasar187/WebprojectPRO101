@@ -1,0 +1,573 @@
+html, body {
+    height: 100%;
+    background: #f5f5f5;
+}
+
+section {
+    padding: 20px 0;
+}
+
+a {
+  color: #000;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #888;
+}
+
+/* Slides show */
+
+.carousel {
+    height: 60%;
+}
+
+.item, .active, .carousel-inner {
+    height: 100%;
+}
+
+
+/* Styling for the navigation bar */
+
+.navbar-inverse {
+    background: #fff;
+    border-color: #fff;
+}
+/*loader css */
+no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/Preloader_3.gif) center no-repeat #fff;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/* Centering header title in middle*/
+
+.navbar-brand {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    left: 34%;
+    top: 15%;
+    right: 43%;
+    width: 500px;
+}
+.navbar-inverse .navbar-brand {
+    padding-top: 20px;
+    color: #000;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: #888;
+  }
+
+  .nav.navbar-nav.pull-right {
+      padding-top: 5px;
+  }
+
+  .nav.navbar-nav.pull-right li a {
+    color: #000;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .nav.navbar-nav.pull-right li a:hover {
+    color: #888;
+  }
+
+/**/
+
+/* Front page Notification */
+
+.notification {
+    background: rgba(120, 85, 129, 1);
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.notification h3 {
+    color: #fff;
+}
+
+.notification h4 {
+    color: #fff;
+}
+
+.notification p {
+    color: #fff;
+}
+
+/**/
+/* for loader */
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Front page Category section */
+
+.category .category-box {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.category .category-box img {
+    position: absolute;
+    width: 350px;
+}
+
+.category .category-box .overlay {
+    position: absolute;
+    height: 250px;
+    width: 350px;
+    -webkit-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+/* Blue Category Hover */
+.category .category-box .overlay.blue {
+    background: rgba(98, 173, 198, 0.65);
+}
+
+.category .category-box:hover .overlay.blue {
+    background: rgba(98, 173, 198, 0.9);
+}
+.category .category-box.active .overlay.blue {
+    background: rgba(98, 173, 198, 0.9);
+}
+
+.arrow.blue{
+    content: '';
+    position: absolute;
+    left: 42%;
+    z-index: 9999;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(98, 173, 198, 1);
+    clear: both;
+    z-index: 0;
+}
+
+/**/
+
+/* Red Category Hover */
+.category .category-box .overlay.red {
+    background: rgba(243, 112, 99, 0.65);
+}
+
+.category .category-box:hover .overlay.red {
+    background: rgba(243, 112, 99, 0.9);
+}
+
+.category .category-box.active .overlay.red {
+    background: rgba(243, 112, 99, 0.9);
+}
+.arrow.red{
+    content: '';
+    position: absolute;
+    left: 42%;
+    z-index: 9999;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(243, 112, 99, 1);
+    clear: both;
+    z-index: 0;
+}
+
+/**/
+
+/* Yellow Category Hover */
+.category .category-box .overlay.yellow {
+    background: rgba(255, 206, 103, 0.65);
+}
+
+.category .category-box:hover .overlay.yellow {
+    background: rgba(255, 206, 103, 0.9);
+}
+
+.category .category-box.active .overlay.yellow {
+    background: rgba(255, 206, 103, 0.9);
+}
+
+.arrow.yellow{
+    content: '';
+    position: absolute;
+    left: 42%;
+    z-index: 9999;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(255, 206, 103, 1);
+    clear: both;
+    z-index: 0;
+}
+
+/**/
+
+/* Green Category Hover */
+.category .category-box .overlay.green {
+    background: rgba(126, 194, 151, 0.65);
+}
+
+.category .category-box:hover .overlay.green {
+    background: rgba(126, 194, 151, 0.9);
+}
+
+.category .category-box.active .overlay.green {
+    background: rgba(126, 194, 151, 0.9);
+}
+
+.arrow.green{
+    content: '';
+    position: absolute;
+    left: 42%;
+    z-index: 9999;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(126, 194, 151, 1);
+    clear: both;
+    z-index: 0;
+}
+
+/**/
+
+
+.category .category-box h3 {
+    position: absolute;
+    color: #fff;
+    bottom: 10px;
+    left: 20px;
+}
+
+/**/
+
+/* Front page Events section */
+
+.section-content {
+  background: #fff;
+  width: 100%;
+  padding: 5px 20px;
+  height: 200px;
+  margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section-content .section-title {
+  color: #010101;
+}
+.section-content h4 {
+  line-height: 25px;
+  color: #9f9f9f;
+
+}
+.employee {
+  background: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  height: 430px;
+  margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.employee-events {
+  padding: 20px;
+  overflow-y: auto;
+  height: 630px;
+  background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-content.contact {
+	margin-top: 110px;
+	float: left;
+	width: 50%;
+	position: relative;
+	left: 25%;
+	right: 25%;
+}
+/**/
+
+/*Styling the input fields*/
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: #010101;
+}
+
+.btn-default {
+  border: 2px solid #888;
+  color: #010101;
+  border-radius: 0;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  transition: 0.3s ease;
+
+}
+
+.btn-default:hover {
+  border: 2px solid #010101;
+  background: transparent;
+  color: #888;
+}
+
+/**/
+
+/* CSS Trick to set placeholder for Date input field*/
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+
+/**/
+
+/* Styling for Category List */
+
+.category-content {
+  background: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 0 #e0e0e0;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  transition: 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.category-content:hover {
+  box-shadow: 0px 0px 15px #e0e0e0;
+}
+
+.category-image {
+  float: left;
+  margin-right: 20px;
+}
+
+.category-info {
+  padding: 20px;
+  height: 250px;
+}
+
+.category-info .list-inline > li {
+  padding-left: 0;
+}
+/**/
+
+
+/* Styling for About us (Om oss) */
+
+.about .head-content {
+  padding: 150px 0 50px 0;
+}
+.about-content {
+  background: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 0 #e0e0e0;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  transition: 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-content:hover {
+  box-shadow: 0px 0px 15px #e0e0e0;
+}
+
+.about-image {
+  margin-right: 20px;
+}
+
+.about-info {
+  padding: 20px;
+  height: auto;
+}
+
+.about-info .list-inline > li {
+  padding-left: 0;
+}
+/**/
+
+
+/* Styling for "Read Comments" Section*/
+
+.comment {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.comment-by {
+  font-size: 16px;
+}
+
+.comment-date {
+  color: #888;
+}
+
+.comment-text {
+  font-size: 14px;
+}
+/**/
+
+/* Styling for "Add a Comment" Section */
+form {
+ position: relative;
+ border-radius: 4px;
+ width: 100%;
+ height: 180px;
+ margin: 0 auto;
+}
+
+form#enquiry {
+  margin-bottom: 80px;
+}
+
+form textarea {
+ border-radius: 2px;
+ border: 1px solid #e2e6e6;
+ margin: 10px 0 0 0;
+ font-family: 'Open Sans', sans-serif;
+ outline: none;
+ width: 100%;
+ height: 100px;
+ padding: 15px 10px;
+}
+
+form textarea:focus {
+  border: 1px solid #010101;
+}
+
+form span.counter {
+ float: right;
+ color: #010101;
+}
+
+form p.info {
+ font-size: 11px;
+ color: #999;
+}
+form p.info > span {
+ color: #010101;
+}
+
+form input[type=submit] {
+ cursor: pointer;
+ border: 2px solid #888;
+ color: #000;
+ border-radius: 2px;
+ background-color: transparent;
+ float: right;
+ -webkit-transition: 0.3s ease;
+ -ms-transition: 0.3s ease;
+ transition: 0.3s ease;
+ padding: 10px 60px  ;
+}
+/** Login Page **/
+
+.login input[type="email"] {
+  height: 45px;
+  padding-left: 10px;
+}
+
+.login input[type="password"] {
+  height: 45px;
+  padding-left: 10px;
+}
+
+.login {
+  padding: 120px 0 105px 0;
+}
+
+/**/
+form input[type=submit]:hover,
+form input[type=submit]:active,
+form input[type=submit]:focus {
+  border: 2px solid #010101;
+  color: #888
+}
+/**/
+
+/* Making the footer always stick to the bottom */
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+
+.copyright p {
+  font-weight: bold;
+  margin: 25px 0 10px;
+  color: #010101;
+}
+
+.media a {
+  padding: 40px 0;
+  margin: 10px;
+  color: #010101;
+}
+
+.media a i {
+  font-size: 19px;
+  margin-top: 5px;
+  -webkit-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.media a i:hover {
+  color: #888;
+}
+
+
+/**/
